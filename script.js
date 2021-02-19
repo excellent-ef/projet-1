@@ -23,19 +23,19 @@
 // const answer = +prompt("Опять бездельнечаешь?", "Ага");
 // console.log(5 + answer);
 
-// const answers = [];
+const answers = [];
 
-// answers[0] = prompt('Как ваше имя?');
-// answers[1] = prompt('Какая ваша фамилия?');
-// answers[2] = prompt('Сколько вам лет?');
+answers[0] = prompt('Как ваше имя?');
+answers[1] = prompt('Какая ваша фамилия?');
+answers[2] = prompt('Сколько вам лет?');
 
-// console.log(answers);
+console.log(answers);
 
 
-console.log(+"8" + 5)
+// console.log(+"8" + 5)
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
 // ++incr;
 // --decr;
