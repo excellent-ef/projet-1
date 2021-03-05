@@ -1,48 +1,27 @@
-"use strict";
+"use strict"
 
-// let ageOld = 1;
-// const Name = "Wella";
+const numberOfFilms = +prompt("Сколько фильмов вы посмотрели?");
 
-// ageOld = 2;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// console.log(Name);
+for (let i = 0; i < 2; i++) {
+    const a = prompt("Один из последних просмотренных фильмов?", ""),
+          b = prompt("На сколько оцените его?", "");
 
-// const hair = {
-//     a: "black"
-// };
+    if (a != null && b != null && a != '' && b != '') {
+        personalMovieDB.movies[a] = b;
+        console.log("done!");
+    } else {
+        console.log("error!");
+        i--;
+    }
+}
 
-// hair.a = "silver";
+console.log(personalMovieDB);
 
-// console.log(hair);
-// alert('Грусти, понел');
-
-// const result = confirm("You are here?")
-
-// console.log(result);
-
-// const answer = +prompt("Опять бездельнечаешь?", "Ага");
-// console.log(5 + answer);
-
-const answers = [];
-
-answers[0] = prompt('Как ваше имя?');
-answers[1] = prompt('Какая ваша фамилия?');
-answers[2] = prompt('Сколько вам лет?');
-
-console.log(answers);
-
-
-// console.log(+"8" + 5)
-
-// let incr = 10,
-//     decr = 10;
-
-// ++incr;
-// --decr;
-
-console.log(++incr);
-console.log(--decr);
-
-console.log(10%2);
-
-console.log(5*4 === 20);
